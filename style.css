@@ -1,0 +1,228 @@
+@font-face {
+    font-family: Unageo;
+    src: url(/assets/Unageo[wght].ttf);
+    font-weight: 300 900;
+    font-variation-settings: "ital" 0 1;
+}
+
+body{
+
+    margin: 0;
+
+}
+
+* {
+
+    transition-duration: 200ms;
+    font-family: Unageo;
+}
+
+
+
+.navbar {
+
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 4 !important;
+    justify-content: space-between;
+}
+
+.navbartext {
+
+    color: rgb(233, 233, 233);
+    font-weight: 300;
+    margin-right: 65px;
+    opacity: 85%;
+    font-weight: 300;
+    font-size: 1.125rem;
+    letter-spacing: 1.3px;
+}
+
+.navbartext:hover {
+
+    font-weight: 600;
+    cursor: pointer;
+    text-shadow: 0 0 20px #ffffffcc;
+    
+    
+}
+
+
+.navbartextselected {
+
+    color: rgb(233, 233, 233);
+    font-weight: 600;
+    
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: rgb(16,16,16);
+    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
+    
+}
+
+.cleft {
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.cright {
+
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.shiranai {
+
+    font-size: 10.7rem;
+    font-weight: 900;
+    color: rgb(231, 231, 231);
+    letter-spacing: 10px;
+    z-index: 3;
+  }
+
+.clothing {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(231, 231, 231);
+    margin-top: -40px;
+    margin-left: 9px;
+    z-index: 4;
+    letter-spacing: 1.5px;
+
+}
+
+.maintext {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+
+.shiranailogo {
+
+    width: auto;
+    height: 700px;
+    margin-right: 170px;
+    margin-top: 100px;
+
+}
+
+.shiranaijp {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    margin-right: 520px;
+    margin-top: 140px;
+
+}
+
+.shiranaijptext {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b8453d;
+    font-size: 9.8rem;
+    font-weight: 800;
+    margin-top: -50px;
+
+}
+
+.cartimg {
+
+    width: auto;
+    height: 33px;
+    margin-right: 25px;
+    opacity: 70%;
+}
+
+.cartimg:hover {
+
+    opacity: 100%;
+    cursor: pointer;
+
+
+}
+
+.logoimg {
+
+    width: auto;
+    height: 40px;
+    margin-left: 25px;
+    opacity: 70%;
+
+}
+
+.logoimg:hover {
+
+    opacity: 100%;
+    cursor: pointer;
+
+}
+
+.container2 {
+
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,0,232);
+    background: linear-gradient(90deg, rgba(255,0,232,1) 0%, rgba(150,188,70,1) 23%, rgba(11,153,137,1) 50%, rgba(102,82,109,1) 70%, rgba(255,0,0,1) 100%);
+
+}
+
+.test {
+
+    font-size: 11rem;
+    color: beige;
+
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(16,16,16);
+    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(78, 78, 78); 
+    border: 5px solid transparent;
+    border-radius: 50px;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(78, 78, 78); 
+    border: 4px solid transparent;
+    border-radius: 50px;
+    background-clip: content-box;
+    transition-duration: 200ms;
+}
+::-webkit-scrollbar-thumb:active {
+    background: rgb(90, 90, 90); 
+    border: 4px solid transparent;
+    border-radius: 50px;
+    background-clip: content-box;
+    transition-duration: 200ms;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
