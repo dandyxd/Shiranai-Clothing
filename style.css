@@ -1,6 +1,6 @@
 @font-face {
     font-family: Unageo;
-    src: url(/assets/Unageo[wght].ttf);
+    src: url(assets/Unageo[wght].ttf);
     font-weight: 300 900;
     font-variation-settings: "ital" 0 1;
 }
@@ -13,7 +13,6 @@ body{
 
 * {
 
-    transition-duration: 200ms;
     font-family: Unageo;
 }
 
@@ -40,6 +39,7 @@ body{
     opacity: 85%;
     font-weight: 300;
     font-size: 1.125rem;
+    transition-duration: 200ms;
     letter-spacing: 1.3px;
 }
 
@@ -48,6 +48,7 @@ body{
     font-weight: 600;
     cursor: pointer;
     text-shadow: 0 0 20px #ffffffcc;
+    transition-duration: 200ms;
     
     
 }
@@ -68,6 +69,8 @@ body{
     height: 100vh;
     background: rgb(16,16,16);
     background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -133,7 +136,7 @@ body{
     position: absolute;
     z-index: 2;
     margin-right: 520px;
-    margin-top: 140px;
+    margin-top: 120px;
 
 }
 
@@ -143,7 +146,8 @@ body{
     -webkit-text-stroke-color: #b8453d;
     font-size: 9.8rem;
     font-weight: 800;
-    margin-top: -50px;
+    margin-bottom: 40px;
+    line-height: 9.8rem;
 
 }
 
@@ -153,12 +157,14 @@ body{
     height: 33px;
     margin-right: 25px;
     opacity: 70%;
+    transition-duration: 200ms;
 }
 
 .cartimg:hover {
 
     opacity: 100%;
     cursor: pointer;
+    transition-duration: 200ms;
 
 
 }
@@ -169,6 +175,7 @@ body{
     height: 40px;
     margin-left: 25px;
     opacity: 70%;
+    transition-duration: 200ms;
 
 }
 
@@ -176,17 +183,10 @@ body{
 
     opacity: 100%;
     cursor: pointer;
+    transition-duration: 200ms;
 
 }
 
-.container2 {
-
-    width: 100%;
-    height: 100vh;
-    background: rgb(255,0,232);
-    background: linear-gradient(90deg, rgba(255,0,232,1) 0%, rgba(150,188,70,1) 23%, rgba(11,153,137,1) 50%, rgba(102,82,109,1) 70%, rgba(255,0,0,1) 100%);
-
-}
 
 .test {
 
@@ -195,34 +195,124 @@ body{
 
 }
 
+.arrow {
+
+    position: absolute;
+    margin-top: 200px;
+    opacity: 80%;
+    transform: translate(-50%, 0);
+    transition-duration: 200ms;
+}
+
+.arrow:hover {
+
+    opacity: 100%;
+    transition-duration: 200ms;
+    cursor: pointer;
+
+}
+
+
+.container2 {
+
+    width: 100%;
+    height: 140vh;
+    background: #0f0f0f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.fcontainer {
+
+    width: 85%;
+    margin-top: 90px;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.ftextdecor {
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(226, 226, 226);
+
+}
+
+.fsmalltextdecor {
+
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+    opacity: 70%;
+    letter-spacing: 1px;
+
+}
+
+.fbox {
+
+    background-color: #161616;
+    width: 350px;
+    height: 450px;
+    border-radius: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 77px;
+
+}
+
+.fboxinside {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+}
+
+.fboxtext {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    margin-left: 45px;
+    margin-bottom: 5px;
+
+}
+
+.fboxtextdecor {
+
+    color: rgb(226, 226, 226);
+    font-weight: 300;
+    font-size: 1.2rem;
+
+}
+
+.fboxpricedecor {
+
+    font-weight: 500;
+
+}
+
+.fcontent {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+}
+
+
 ::-webkit-scrollbar {
-    width: 14px;
-    height: 14px;
-}
-::-webkit-scrollbar-track {
-    background: rgb(16,16,16);
-    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
-}
-::-webkit-scrollbar-thumb {
-    background: rgb(78, 78, 78); 
-    border: 5px solid transparent;
-    border-radius: 50px;
-    background-clip: content-box;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgb(78, 78, 78); 
-    border: 4px solid transparent;
-    border-radius: 50px;
-    background-clip: content-box;
-    transition-duration: 200ms;
-}
-::-webkit-scrollbar-thumb:active {
-    background: rgb(90, 90, 90); 
-    border: 4px solid transparent;
-    border-radius: 50px;
-    background-clip: content-box;
-    transition-duration: 200ms;
-}
-::-webkit-scrollbar-corner {
-    background-color: transparent;
+    display: none;
 }
