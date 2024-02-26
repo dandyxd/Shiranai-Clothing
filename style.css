@@ -5,6 +5,12 @@
     font-variation-settings: "ital" 0 1;
 }
 
+:root {
+    
+    --ahoj: rgb(233, 233, 233);
+
+}
+
 body{
 
     margin: 0;
@@ -18,7 +24,7 @@ body{
 }
 
 
-
+/* Navbar */
 .navbar {
 
     position: fixed;
@@ -34,7 +40,7 @@ body{
 
 .navbartext {
 
-    color: rgb(233, 233, 233);
+    color: var(--ahoj);
     font-weight: 300;
     margin-right: 65px;
     opacity: 85%;
@@ -50,105 +56,23 @@ body{
     cursor: pointer;
     text-shadow: 0 0 20px #ffffffcc;
     transition-duration: 200ms;
-    
-    
 }
 
 
 .navbartextselected {
 
-    color: rgb(233, 233, 233);
+    color: var(--ahoj);
     font-weight: 600;
     
 }
 
-.container {
+.navbarlinks {
 
-    display: flex;
-    flex-direction: row;
     width: 100%;
-    height: 100vh;
-    background: rgb(16,16,16);
-    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-
-.cleft {
-
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.cright {
-
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-}
-
-.shiranai {
-
-    font-size: 10.7rem;
-    font-weight: 900;
-    color: rgb(231, 231, 231);
-    letter-spacing: 10px;
-    z-index: 3;
-  }
-
-.clothing {
-
-    font-size: 1.4rem;
-    font-weight: 500;
-    color: rgb(231, 231, 231);
-    margin-top: -40px;
-    margin-left: 9px;
-    z-index: 4;
-    letter-spacing: 1.5px;
-
-}
-
-.maintext {
-
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    margin-bottom: 80px;
-    margin-left: 100px;
-}
-
-.shiranailogo {
-
-    width: auto;
-    height: 700px;
-    margin-right: 170px;
-    margin-top: 100px;
-
-}
-
-.shiranaijp {
-
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 2;
-    margin-right: 520px;
-    margin-top: 120px;
-
-}
-
-.shiranaijptext {
-    color: rgba(255, 255, 255, 0);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #b8453d;
-    font-size: 9.8rem;
-    font-weight: 800;
-    margin-bottom: 40px;
-    line-height: 9.8rem;
 
 }
 
@@ -188,13 +112,99 @@ body{
 
 }
 
+/* First section */
 
-.test {
+.container {
 
-    font-size: 11rem;
-    color: beige;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    background: rgb(16,16,16);
+    background: linear-gradient(0deg, rgba(16,16,16,1) 0%, rgba(24,24,24,1) 100%);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cleft {
+
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.cright {
+
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.shiranai {
+
+    font-size: 10.7rem;
+    font-weight: 900;
+    color: var(--ahoj);
+    letter-spacing: 10px;
+    z-index: 3;
+  }
+
+.clothing {
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--ahoj);
+    margin-top: -40px;
+    margin-left: 9px;
+    z-index: 4;
+    letter-spacing: 1.5px;
 
 }
+
+.maintext {
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+
+.shiranailogo {
+
+    width: auto;
+    height: 760px;
+    margin-right: 170px;
+    margin-top: 60px;
+
+}
+
+.shiranaijp {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    margin-right: 520px;
+    margin-top: 120px;
+
+}
+
+.shiranaijptext {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #b8453d;
+    font-size: 9.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    line-height: 9.8rem;
+    text-shadow: 0 0 180px #ff89896b;
+
+}
+
 
 .arrow {
 
@@ -213,6 +223,7 @@ body{
 
 }
 
+/* Second section */
 
 .container2 {
 
@@ -265,6 +276,7 @@ body{
     align-items: center;
     flex-direction: column;
     margin-right: 77px;
+    z-index: 3;
 
 }
 
@@ -319,6 +331,117 @@ body{
 }
 
 
+#hoodie1 {
+
+    width: 400px;
+    height: 300px;
+    background-size: 500px;
+    background-position: center;
+    background-image:
+    url('assets/hoodie1.png');
+    transition-duration: 200ms;
+
+    
+}
+
+#hoodie1:hover {
+
+    background-size: 300px;
+    background-image:
+    url('assets/hoodie2.png');
+    transition-duration: 200ms;
+    border: none;
+
+}
+
+/* Animations */
+
+@keyframes ahoj {
+    from {
+        opacity: 0%;
+        transform: translateY(-70px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes ahoj2 {
+    from {
+        opacity: 0%;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0);
+    }
+    
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+    
+}
+
+.fadein {
+
+    animation: fadein 2s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+
+}
+
+.fadein--2s {
+
+    animation: fadein 2.5s;
+    animation-delay: 1.0s;
+    animation-fill-mode: forwards;
+}
+
+.fadein--3s {
+
+    animation: fadein 3s;
+    animation-delay: 1.3s;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.ahoj {
+
+    animation-name: ahoj;
+    animation-duration: 1.5s;
+
+}
+
+.ahoj--2s {
+
+    animation-name: ahoj;
+    animation-duration: 2.3s;
+
+}
+
+
+.ahoj2 {
+
+    animation-name: ahoj2;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
+
